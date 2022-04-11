@@ -1,0 +1,17 @@
+header {
+    background-color: navy;
+    color: white;
+    padding: 16px;
+}
+
+section {
+    margin: 16px;
+}
+
+form {
+    padding: 8px 0 8px 0;
+}
+
+form > * {
+    margin: 8px 0 8px 0;
+}
