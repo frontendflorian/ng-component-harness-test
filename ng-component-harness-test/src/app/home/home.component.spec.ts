@@ -4,7 +4,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HomeComponent } from './home.component';
 import { SimpleFormHarness } from './simple-form/simple-form.harness';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
-import { MatButtonHarness } from '@angular/material/button/testing';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -32,7 +31,7 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have button disabled',async () => {
+  it('should have harness not null',async () => {
     expect(harness).not.toBeNull();
   })
 });

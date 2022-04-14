@@ -1,16 +1,16 @@
 <section>
     <p>
-        The next section contains a simple form. First section contains Angular Material components. Second section contains normal html elements.
+        The next section contains a simple form. The form itself contains Angular Material components and normal html elements.
     </p>
     <form>
         <hr/>
             <mat-form-field>
-            <mat-label>Name</mat-label>
+            <mat-label>First Name</mat-label>
             <input matInput name="username" class="d-block" [(ngModel)]="firstName" type="text" required/>
         </mat-form-field>
-        <button mat-button [disabled]="!firstName.length" type="submit" class="d-block" (click)="alert()">Say Hi</button>
+        <label style="display: block;">Last name</label>
+        <input style="margin-top: 8px;" id="lastName" type="text" name="lastName" [(ngModel)]="lastName" />
+        <button style="border: 2px solid gray; border-radius: 3px; display: block; margin-top: 8px;" mat-button [disabled]="!firstName.length" type="submit" class="d-block" (click)="alert()">Say Hi</button>
         <hr/>
-        <label>Last name</label>
-        <input id="lastName" type="text" name="lastName" [(ngModel)]="lastName" />
     </form>
 </section>
